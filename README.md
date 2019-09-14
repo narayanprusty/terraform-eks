@@ -1,4 +1,4 @@
-This repository contains terraform configuration file for deploy an EKS cluster.
+This repository contains terraform configuration file to deploy an EKS cluster.
 
 ## Setup Cluster
 
