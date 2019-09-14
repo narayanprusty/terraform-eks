@@ -12,7 +12,7 @@ AWS_ACCESS_KEY_ID="<accesskey>" AWS_SECRET_ACCESS_KEY="<secretkey>" terraform ap
 
 ## Custom Cluster Configuration
 
-You can change the region and other cluster configuration in the locals.tf file.
+You can change the region and other cluster configuration in the local.tf file.
 
 ## kubeconfig Configuration
 
