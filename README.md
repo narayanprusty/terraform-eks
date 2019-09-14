@@ -16,7 +16,7 @@ You can change the region and other cluster configuration in the locals.tf file.
 
 ## kubeconfig Configuration
 
-Run the below command to configure kubeconfig to connect to the EKS cluster:
+Run the below command to configure `kubectl` to connect to the EKS cluster:
 
 ```
 aws configure set aws_access_key_id <accesskey>
