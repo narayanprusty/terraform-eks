@@ -1,0 +1,25 @@
+dist: trusty
+sudo: false
+
+branches:
+  only:
+    - master
+
+env:
+  - TF_INPUT=false
+
+before_install:
+  - curl -sLo /tmp/terraform.zip https://releases.hashicorp.com/terraform/0.12.8/terraform_0.12.8_linux_amd64.zip
+  - unzip /tmp/terraform.zip -d /tmp
+  - mkdir ~/bin
+  - mv /tmp/terraform ~/bin
+  - export PATH="~/bin:$PATH"
+
+script: terraform plan 
+
+deploy:
+- provider: script
+  skip_cleanup: true
+  script: terraform apply -auto-approve
+  on:
+    branch: master
