@@ -1,7 +1,3 @@
-provider "aws" {
-  region     = local.region
-}
-
 /*
   Create a IAM Role and attach policies to it. 
   This IAM Role will be used by EKS to setup all AWS resources it needs to create master.

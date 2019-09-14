@@ -1,0 +1,8 @@
+terraform {
+  backend "s3" {
+    bucket         = "${BACKEND_BUCKET_NAME}"
+    key            = "terraform.tfstate"
+    region         = "${BACKEND_REGION}"
+    dynamodb_table = "${BACKEND_TABLE_NAME}"
+  }
+}
