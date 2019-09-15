@@ -1,4 +1,8 @@
+# Deploy EKS using Terraform
+
 This repository contains terraform configuration files to deploy an EKS cluster.
+
+[![Build Status](https://travis-ci.org/narayanprusty/terraform-eks.svg?branch=master)](https://travis-ci.org/narayanprusty/terraform-eks)
 
 ## AWS Configuration
 
