@@ -1,4 +1,4 @@
-This repository contains terraform configuration file to deploy an EKS cluster.
+This repository contains terraform configuration files to deploy an EKS cluster.
 
 ## Bootstrap State
 
