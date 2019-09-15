@@ -44,6 +44,7 @@ git commit -m "Backend state setup" && git push origin master
 To setup EKS cluster run the following command:
 
 ```
+# Downloads modules, setups providers, configures state and so on.
 terraform init
 
 # Create development environment workspace. We can setup multiple environments such as: production, staging and so on
