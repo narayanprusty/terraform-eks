@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket                = "402432300121-gilxciuzodnakkjg"
-    workspace_key_prefix  = "shared/workspaces"
-    key                   = "terraform.tfstate"
-    region                = "us-east-1"
-    dynamodb_table        = "402432300121-gilxciuzodnakkjg"
+    bucket               = "402432300121-gilxciuzodnakkjg"
+    workspace_key_prefix = "shared/workspaces"
+    key                  = "terraform.tfstate"
+    region               = "us-east-1"
+    dynamodb_table       = "402432300121-gilxciuzodnakkjg"
   }
 }
