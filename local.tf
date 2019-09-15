@@ -1,5 +1,5 @@
 locals {
-  name   = "demo"
+  name   = "k8s-${terraform.workspace}"
   region = "us-east-1"
 
   k8s_version = "1.14"

@@ -1,0 +1,9 @@
+terraform {
+  backend "s3" {
+    bucket                = "${BACKEND_BUCKET_NAME}"
+    workspace_key_prefix  = "shared/workspaces"
+    key                   = "terraform.tfstate"
+    region                = "${BACKEND_REGION}"
+    dynamodb_table        = "${BACKEND_TABLE_NAME}"
+  }
+}
