@@ -144,6 +144,16 @@ resource "aws_iam_role_policy_attachment" "AmazonEKS_CNI_Policy" {
   role       = "${aws_iam_role.worker.name}"
 }
 
+resource "aws_iam_role_policy_attachment" "AmazonEC2ContainerRegistryReadOnly" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+  role       = "${aws_iam_role.worker.name}"
+}
+
+resource "aws_iam_role_policy_attachment" "ElasticLoadBalancingFullAccess" {
+  policy_arn = "arn:aws:iam::aws:policy/ElasticLoadBalancingFullAccess"
+  role       = "${aws_iam_role.worker.name}"
+}
+
 /*
   An instance profile is a container for an IAM role that you can use to pass role information to an EC2 instance when the instance starts.
 */
@@ -260,5 +270,5 @@ resource "kubernetes_config_map" "worker" {
 EOF
   }
 
-  depends_on = ["aws_autoscaling_group.worker"]
+  depends_on = ["aws_eks_cluster.cluster"]
 }
