@@ -66,7 +66,7 @@ You can change the region and other cluster configuration in the local.tf file.
 Run the below command to configure `kubectl` to connect to the EKS cluster:
 
 ```
-aws eks --region us-east-1 update-kubeconfig --name k8s-dev
+aws eks --region us-east-1 update-kubeconfig --name k8s_dev
 ```
 
 Now you should be able to use `kubectl` command.

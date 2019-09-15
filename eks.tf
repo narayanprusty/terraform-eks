@@ -194,6 +194,7 @@ resource "aws_launch_configuration" "worker" {
   iam_instance_profile        = "${aws_iam_instance_profile.worker.name}"
   associate_public_ip_address = true
   user_data                   = "${base64encode(local.userdata)}"
+  key_name                    = "xyz"
 
   lifecycle {
     create_before_destroy = true
