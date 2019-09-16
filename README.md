@@ -38,7 +38,7 @@ rm -rf terraform-backend-s3
 
 
 ## Everyone needs to use the same bucket and table names therefore we commit it
-git commit -m "Backend state setup" && git push origin master
+git add . && git commit -m "Backend state setup" && git push origin master
 ```
 
 > Note that this step is required once only. After the remote backend is created we don't need to bootstrap again.
